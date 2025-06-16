@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RazorPay</title>
+    <link href="./output.css" rel="stylesheet"/>
+</head>
+<body>
+    <!--navigation bar-->
+    <nav class="bg-[rgb(2,4,42)] relative">
+        <div class="relative w-[1080px] mx-auto flex items-center justify-between">
+            <!--logo-->
+            <div class="w-auto mr-10">
+                <a href="razorpay.com">
+                <img src="Images/images.jpg" 
+                width="125 px" 
+                height="30px">
+            </a>
+            </div>
+            <div>
+
+                <ul class="flex space-x-4">
+    
+                    <li class="text-white py-6 hover:text-blue-500 cursor-pointer 
+                    transition-all duration-200 relative group">
+                    <!-- Here group is added if the *child element is depend on the parent element state.*
+                     1. the bottom line is depend on the list item i.e the text  -->
+                <a href="#" title="payment gateway">
+                    Payment
+                </a>
+                <div class="bottom-0 h-1 bg-blue-500 w-full absolute hidden 
+                group-hover:block transition-all duration-200"></div>
+            
+                </li>
+                    <li class="text-white py-6 hover:text-blue-500 cursor-pointer 
+                    transition-all duration-200 relative group">
+                    <a href="#" title="payment gateway">
+                    Banking
+                </a>
+                <div class="bottom-0 h-1 bg-blue-500 w-full absolute hidden 
+                group-hover:block transition-all duration-200"></div>
+                    </li>
+    
+                    <li class="text-white py-6 hover:text-blue-500 cursor-pointer 
+                    transition-all duration-200 relative group">
+                    <a href="#" title="payment gateway">
+                    Corporate Card
+                </a>
+    
+                    </li>
+    
+                    <li class="text-white py-6 hover:text-blue-500 cursor-pointer 
+                    transition-all duration-200 relative group">
+                    <a href="#" title="payment gateway">
+                    Payroll
+                </a>
+    
+                    </li>
+    
+                    <li class="text-white py-6 hover:text-blue-500 cursor-pointer 
+                    transition-all duration-200 relative group">
+                    <a href="#" title="payment gateway">
+                    Resources
+                </a>
+                <div class="bottom-0 h-1 bg-blue-500 w-full absolute hidden 
+                group-hover:block transition-all duration-200"></div>
+                    </li>
+    
+                    <li class="text-white py-6 hover:text-blue-500 cursor-pointer 
+                    transition-all duration-200 relative group">
+                    <a href="#" title="payment gateway">
+                    Support
+                </a>
+                <div class="bottom-0 h-1 bg-blue-500 w-full absolute hidden 
+                group-hover:block transition-all duration-200"></div>
+                    </li>
+    
+                    <li class="text-white py-6 hover:text-blue-500 cursor-pointer 
+                    transition-all duration-200 relative group">
+                    <a href="#" title="payment gateway">
+                    Pricing
+                </a>
+                <div class="bottom-0 h-1 bg-blue-500 w-full absolute hidden 
+                group-hover:block transition-all duration-200"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex space-x-4">
+                <img src="./Images/Flag_of_India.svg"
+                width="28px"
+                height="20px"
+                />
+                <button class="bg-[rgb(2,4,42)] py-3 px-5 text-white border-blue-500 
+                border text-sm font-bold rounded-md ">Log In</button>
+                <button class="py-3 px-4 w-24 border text-sm font-bold rounded-sm text-blue-400 bg-white hover:text-blue-600 transition-all duration-150">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class = " bg-[rgb(2,4,42)] ">
+        <div class="flex flex-row justify-between items-center mx-auto w-10/12 max-w-full">
+            <!--left div-->
+        <div class="space-y-8">
+            <h3 class = "text-white text-4xl font-bold text-[40px]">Power your finance, grow your business</h3>
+            <div class="bg-green-400 h-1 w-6" ></div>
+            <p class="text-white opacity-70 leading-7 text-lg">Accept payments from customers. Automate payouts to vendors & employees. Never run out of working capital.</p>
+            <button class="bg-blue-400 rounded-md py-[14px] px-[18px]
+             hover:bg-blue-500 transition-all duration-200 text-white">Sign Up Now</button>
+        </div>
+        <!--right div-->
+        <div>
+            <img class = "width-[950px] w-full" src="Images/hero-illustration-783a8736.jpg" alt="">
+        </div>
+        </div>
+        <div class="absolute left-0 right-0 w-[100%] overflow-x-hidden">
+            <img class ="w-full object-fill scale-x-101" src="Images/hero-shape-55e07e29.svg" alt="">
+        </div>
+    </section>
+</body>
+</html>

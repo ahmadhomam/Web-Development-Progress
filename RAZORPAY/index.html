@@ -3,8 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="data:image/png;base64,
+    iVBORw0KGgoAAAANSUhEUgAAAKMAAACjCAMAAADRsl6yAAAAM1BMVEVAAAAHJVQHJVUHJlMHJlQHJlUIJlQHJ1QHJ1UIJ1QzlP80lP8ylf8zlf80lf8zlv80lv+kX2KfAAAAAXRSTlMAQObYZgAAAhRJREFUeNrt29tuwjAQhOEUBtpSBvr+T1tVlSpxSHBs8P6JNpdw4U876wOOGIZ8ah+bL1wC0Xwh3Gi80cshmi/kGvlEm2608UbjjV4g0Xwhzmi80Uslmi8kGflEm2608UbjjV480XwhwGi80esgmi+MNRpvNJ54MN5o041eGdF8YYjReKPXSDRf2NtovNF4oo03Gm/0qonmCzsZjTd6/UTzha83lhjOA94YfqVXFCTcCLgaLZoN6CnDuGEuGjzW+F00dqzxUDIyNeoBb6yYV7FEonHeHWRE1JVLaE/jQDOWDcgyXnwpYtSXQm2BZbwiihf1tVC8qG+JNOMdoXaoqId7RFY73hX+G0+AqC8+2evGCGjHkSJK75SoR4WcdpwgQqKeEhKNY0SOURoznihGjRshRIlu1CQRYdS08RhPlB4Y48s4TtxAjNLDMkYbVWCMJUp4Yxkx0ijRjW8qNYYRHwujj+CfBcTgqKUZxpCrUWmWMaKMwhs1l9jfKNHLKNGNH7OIIfdlUk0ZexqlOiOZ2N2oamI3o+qN5z5GqcFIJvY0qo3Yw6hG4+vPZVKr8dVl3DYQO73HlNrLuAQjmZjGbMeMeq1RT5/LTq3EfbZjtmNG3c24yXZ8pvGY7Zir4+9zyDLmRtjT+JVRNxF32Y7PNB6yHbMd//6Zmz8T0og5gp+zjHkuy5UnN8LcCLMdc3Vkv02oc/0Ahohg8GFznigAAAAASUVORK5CYII="
+    type="image/x-icon">
     <title>RazorPay</title>
     <link href="../output.css" rel="stylesheet"/>
+
+    <style>
+        .companieslist{
+            animation: 8s infinite linear moveImage
+        }
+        @keyframes moveImage {
+            0%{ 
+                top: 0;
+            }
+            100%{
+                top: -50%;
+            }
+        }
+    </style>
 </head>
 <body>
     <!--navigation bar-->
@@ -92,8 +109,9 @@
                 height="20px"
                 />
                 <button class="bg-[rgb(2,4,42)] py-3 px-5 text-white border-blue-500 
-                border text-sm font-bold rounded-md ">Log In</button>
-                <button class="py-3 px-4 w-24 border text-sm font-bold rounded-sm text-blue-400 bg-white hover:text-blue-600 transition-all duration-150">Sign Up</button>
+                border text-sm font-bold rounded-md cursor-pointer ">Log In</button>
+                <button class="py-3 cursor-pointer px-4 w-24 border text-sm font-bold rounded-sm
+                 text-blue-400 bg-white hover:text-blue-600 transition-all duration-150">Sign Up</button>
             </div>
         </div>
     </nav>
@@ -106,7 +124,7 @@
             <h3 class = "text-white text-4xl font-bold text-[40px]">Power your finance, grow your business</h3>
             <div class="bg-green-400 h-1 w-6" ></div>
             <p class="text-white opacity-70 leading-7 text-lg">Accept payments from customers. Automate payouts to vendors & employees. Never run out of working capital.</p>
-            <button class="bg-blue-500 rounded-md py-[14px] px-[18px]
+            <button class="bg-blue-500 rounded-md py-[14px] px-[18px] cursor-pointer
              hover:bg-blue-500 transition-all duration-200 text-white">Sign Up Now</button>
         </div>
         <!--right div-->
@@ -219,7 +237,8 @@
             </div>
             <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
                 <!--box1-->
-                <div class="w-full min-h-[15rem] relative cursor-pointer">
+                <div class="w-full min-h-[15rem] hover:scale-105 transition-all
+                duration-200 relative cursor-pointer">
                     <!--small round image-->
                     <img class="bg-blue-500 absolute right-3 top-3 w-12 h-12 
                         rounded-full z-[8] transition-all duration-200" src="../Images/payment-link-icon-68c91ae5.svg" alt="">
@@ -252,17 +271,18 @@
                         <!-- hyperlink-->
                         <div class="flex items-center cursor-pointer group">
                             <a class="font-mullish font-bold text-blue-500 
-                                group-hover:text-grayBlue transition-all duration-200" href="#">Know more</a>
+                                group-hover:text-blue-950 transition-all duration-200" href="#">Know more</a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 text-blue-500 
-                                group-hover:text-grayBlue transition-all duration-200">
+                                group-hover:text-blue-950 transition-all duration-200">
                                 <polyline points="9 18 15 12 9 6"></polyline>
                             </svg>
                         </div>
                     </div>
                 </div>
                 <!--box2-->
-                <div class="w-full min-h-[15rem] relative cursor-pointer">
+                <div class="w-full min-h-[15rem] hover:scale-105 transition-all
+                duration-200 relative cursor-pointer">
                     <!--small round image-->
                     <img class="bg-blue-500 absolute right-3 top-3 w-12 h-12 
                         rounded-full z-[8] transition-all duration-200" src="../Images/payment-pages-icon-fc44ea1e.svg" alt="">
@@ -294,17 +314,18 @@
                         <!-- hyperlink-->
                         <div class="flex items-center cursor-pointer group">
                             <a class="font-mullish font-bold text-blue-500 
-                                group-hover:text-grayBlue transition-all duration-200" href="#">Know more</a>
+                                group-hover:text-blue-950 transition-all duration-200" href="#">Know more</a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 text-blue-500 
-                                group-hover:text-grayBlue transition-all duration-200">
+                                group-hover:text-blue-950 transition-all duration-200">
                                 <polyline points="9 18 15 12 9 6"></polyline>
                             </svg>
                         </div>
                     </div>
                 </div>
                 <!--box3-->
-                <div class="w-full min-h-[15rem] relative cursor-pointer">
+                <div class="w-full min-h-[15rem] hover:scale-105
+                transition-all duration-200 relative cursor-pointer">
                     <!--small round image-->
                     <img class="bg-blue-500 absolute right-3 top-3 w-12 h-12 
                         rounded-full z-[8] transition-all duration-200" src="../Images/payment-button-f0af1bfb.svg" alt="">
@@ -336,17 +357,18 @@
                         <!-- hyperlink-->
                         <div class="flex items-center cursor-pointer group">
                             <a class="font-mullish font-bold text-blue-500 
-                                group-hover:text-grayBlue transition-all duration-200" href="#">Know more</a>
+                                group-hover:text-blue-950 transition-all duration-200" href="#">Know more</a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 text-blue-500 
-                                group-hover:text-grayBlue transition-all duration-200">
+                                group-hover:text-blue-950 transition-all duration-200">
                                 <polyline points="9 18 15 12 9 6"></polyline>
                             </svg>
                         </div>
                     </div>
                 </div>
                 <!--box4-->
-                <div class="w-full min-h-[15rem] relative cursor-pointer">
+                <div class="w-full min-h-[15rem] hover:scale-105 transition-all
+                duration-200 relative cursor-pointer">
                     <!--small round image-->
                     <img class="bg-blue-500 absolute right-3 top-3 w-12 h-12 
                         rounded-full z-[8] transition-all duration-200" src="../Images/subscriptions-icon-fe8aaffb.svg" alt="">
@@ -378,17 +400,18 @@
                         <!-- hyperlink-->
                         <div class="flex items-center cursor-pointer group">
                             <a class="font-mullish font-bold text-blue-500 
-                                group-hover:text-grayBlue transition-all duration-200" href="#">Know more</a>
+                                group-hover:text-blue-950 transition-all duration-200" href="#">Know more</a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 text-blue-500 
-                                group-hover:text-grayBlue transition-all duration-200">
+                                group-hover:text-blue-950 transition-all duration-200">
                                 <polyline points="9 18 15 12 9 6"></polyline>
                             </svg>
                         </div>
                     </div>
                 </div>
                 <!--box5-->
-                <div class="w-full min-h-[15rem] relative cursor-pointer">
+                <div class="w-full min-h-[15rem] hover:scale-105 
+                transition-all duration-200 relative cursor-pointer">
                     <!--small round image-->
                     <img class="bg-blue-500 absolute right-3 top-3 w-12 h-12 
                         rounded-full z-[8] transition-all duration-200" src="../Images/route-icon-eb5cf08e.svg" alt="">
@@ -420,17 +443,18 @@
                         <!-- hyperlink-->
                         <div class="flex items-center cursor-pointer group">
                             <a class="font-mullish font-bold text-blue-500 
-                                group-hover:text-grayBlue transition-all duration-200" href="#">Know more</a>
+                                group-hover:text-blue-950 transition-all duration-200" href="#">Know more</a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 text-blue-500 
-                                group-hover:text-grayBlue transition-all duration-200">
+                                group-hover:text-blue-950 transition-all duration-200">
                                 <polyline points="9 18 15 12 9 6"></polyline>
                             </svg>
                         </div>
                     </div>
                 </div>
                 <!--box6-->
-                <div class="w-full min-h-[15rem] relative cursor-pointer">
+                <div class="w-full min-h-[15rem] hover:scale-105
+                transition-all duration-200 relative cursor-pointer">
                     <!--small round image-->
                     <img class="bg-blue-500 absolute right-3 top-3 w-12 h-12 
                         rounded-full z-[8] transition-all duration-200" src="../Images/smart-collect-icon-9dab0826.svg" alt="">
@@ -464,10 +488,10 @@
                         <!-- hyperlink-->
                         <div class="flex items-center cursor-pointer group">
                             <a class="font-mullish font-bold text-blue-500 
-                                group-hover:text-grayBlue transition-all duration-200" href="#">Know more</a>
+                                group-hover:text-blue-950 transition-all duration-200" href="#">Know more</a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 text-blue-500 
-                                group-hover:text-grayBlue transition-all duration-200">
+                                group-hover:text-blue-950 transition-all duration-200">
                                 <polyline points="9 18 15 12 9 6"></polyline>
                             </svg>
                         </div>
@@ -568,7 +592,8 @@
                 <!--card box-->
                 <div class="w-full grid grid-cols-3  gap-4 my-14">
                     <!--box1-->
-                    <div class="w-full min-h-[15rem] relative bg-[#181c2e] cursor-pointer hover:">
+                    <div class="w-full min-h-[15rem] hover:scale-105
+                    transition-all duration-200 relative bg-[#181c2e] cursor-pointer">
                         <!--small round image-->
                         <img class="bg-blue-500 absolute right-3 top-3 w-12 h-12 
                                                             rounded-full z-[80] transition-all duration-200"
@@ -603,29 +628,30 @@
     
                             <!-- hyperlink-->
                             <div class="flex items-center cursor-pointer group">
-                                <a class="font-mullish font-bold text-blue-500 
-                                                                    group-hover:text-blue-950 transition-all duration-200"
+                                <a class="font-mullish font-bold text-blue-600 
+                                                                    group-hover:text-blue-500 transition-all duration-200"
                                     href="#">Know
                                     more</a>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 text-blue-500 
-                                                                    group-hover:text-grayBlue transition-all duration-200">
+                                    stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 text-blue-600 
+                                                                    group-hover:text-blue-500 transition-all duration-200">
                                     <polyline points="9 18 15 12 9 6"></polyline>
                                 </svg>
                             </div>
                         </div>
                     </div>
                     <!--box2-->
-                    <div class="w-full min-h-[15rem] relative cursor-pointer">
+                    <div class="w-full min-h-[15rem] hover:scale-105 transition-all
+                    duration-200 relative cursor-pointer">
                         <!--small round image-->
                         <img class="bg-blue-500 absolute right-3 top-3 w-12 h-12 
                                                         rounded-full z-[8] transition-all duration-200"
                             src="../Images/smart-collect-icon-9dab0826.svg" alt="">
                         <!--style of box view-->
                         <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
-                            preserveAspectRatio="none" class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] 
-                                                        transition-all duration-200" style="stroke-opacity: 0.15">
+                            preserveAspectRatio="none" class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[9] 
+                                                        transition-all duration-200" style="stroke-opacity: 0.8">
                             <path d="m 0 6 
                                                         a 6 6 0 0 1 6 -6 
                                                         h 250.32501220703125 
@@ -651,29 +677,30 @@
     
                             <!-- hyperlink-->
                             <div class="flex items-center cursor-pointer group">
-                                <a class="font-mullish font-bold text-blue-500 
-                                                                    group-hover:text-grayBlue transition-all duration-200"
+                                <a class="font-mullish font-bold text-blue-600 
+                                                                    group-hover:text-blue-500 transition-all duration-200"
                                     href="#">Know
                                     more</a>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 text-blue-500 
-                                                                    group-hover:text-grayBlue transition-all duration-200">
+                                    stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 text-blue-600 
+                                                                    group-hover:text-blue-500 transition-all duration-200">
                                     <polyline points="9 18 15 12 9 6"></polyline>
                                 </svg>
                             </div>
                         </div>
                     </div>
                     <!--box3-->
-                    <div class="w-full min-h-[15rem] relative cursor-pointer">
+                    <div class="w-full min-h-[15rem] hover:scale-105 hover:border-blue-300 transition-all duration-200
+                     relative cursor-pointer">
                         <!--small round image-->
                         <img class="bg-blue-500 absolute right-3 top-3 w-12 h-12 
                                                             rounded-full z-[8] transition-all duration-200"
                             src="../Images/smart-collect-icon-9dab0826.svg" alt="">
                         <!--style of box view-->
                         <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
-                            preserveAspectRatio="none" class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] 
-                                                            transition-all duration-200" style="stroke-opacity: 0.15">
+                            preserveAspectRatio="none" class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[9] 
+                                                            transition-all duration-200" style="stroke-opacity: 0.8">
                             <path d="m 0 6 
                                                                                         a 6 6 0 0 1 6 -6 
                                                                                         h 250.32501220703125 
@@ -699,14 +726,14 @@
     
                             <!-- hyperlink-->
                             <div class="flex items-center cursor-pointer group">
-                                <a class="font-mullish font-bold text-blue-500 
-                                                                    group-hover:text-grayBlue transition-all duration-200"
+                                <a class="font-mullish font-bold text-blue-600 
+                                                                    group-hover:text-blue-500 transition-all duration-200"
                                     href="#">Know
                                     more</a>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 text-blue-500 
-                                                                    group-hover:text-grayBlue transition-all duration-200">
+                                    stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 text-blue-600 
+                                                                    group-hover:text-blue-500 transition-all duration-200">
                                     <polyline points="9 18 15 12 9 6"></polyline>
                                 </svg>
                             </div>
@@ -736,6 +763,151 @@
     
         </div>
     </section>
+    <!-- new feature -->
+     <section class="relative bg-white">
+        <div class="relative w-11/12 max-w-[1080px] mx-auto p-4">
+            <img src="../Images/download (1).png" alt=""
+            class="absolute w-[233px] left-[300px] -top-[6rem] -z-[10]">
+            <img src="../Images/download (1).png" alt=""
+            class="absolute w-[233px] -right-[3.5rem] -top-[6rem] -z-[10]">
+            <div class="grid grid-cols-3 gap-y-10 gap-x-4 relative ">
+                <!--item 1-->
+                <div class="flex items-center z-0 relative">
+                    <h2 class="leading-[1.50] text-4xl font-bold text-blue-950">New in the
+                        <br>
+                        <span class="text-blue-500">Razorpay</span>
+                        Product <br>Suite
+                    </h2>
+                </div>
+                <!--item 2-->
+                <div class=" w-full max-h-[300px] hover:scale-105 cursor-pointer 
+                                transition-all duration-200 flex flex-col gap-y-4 p-10 z-[20]
+                                stroke-1 ">
+                    <img class="rounded-full bg-blue-500 w-10 h-10" src="../Images/razorpayXicon-3345804c.svg"
+                        alt="">
+                    <h3 class="font-bold text-xl pt-4">Corporate Cards</h3>
+                    <p class="py-3 leading-normal opacity-70">Simplify your recurring, international
+                        and team expenses with savings on every spend.
+                        Save upto 10 lacs every month.</p>
+                    <div class="flex flex-row items-center">
+                        <a class="text-blue-500 font-bold " href="#">Know more</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 
+                        text-blue-500 group-hover:text-blue-600 transition-all duration-200">
+                        <polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                </div>
+                <!--item 3-->
+                <div class=" w-full max-h-[300px] hover:scale-105 cursor-pointer 
+                                transition-all duration-200 flex flex-col gap-y-4 p-10 z-[20]">
+                    <img class="rounded-full bg-blue-500 w-10 h-10" src="../Images/razorpayXicon-3345804c.svg"
+                        alt="">
+                    <h3 class="font-bold text-xl pt-4">Corporate Cards</h3>
+                    <p class="py-3 leading-normal opacity-70">Simplify your recurring, international
+                        and team expenses with savings on every spend.
+                        Save upto 10 lacs every month.</p>
+                    <div class="flex flex-row items-center">
+                        <a class="text-blue-500 font-bold " href="#">Know more</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 
+                        text-blue-500 group-hover:text-blue-600 transition-all duration-200">
+                        <polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                </div>
+                <!--item 4-->
+                <div class=" w-full max-h-[300px] hover:scale-105 cursor-pointer 
+                                transition-all duration-200 flex flex-col gap-y-4 p-10">
+                    <img class="rounded-full bg-blue-500 w-10 h-10" src="../Images/razorpayXicon-3345804c.svg"
+                        alt="">
+                    <h3 class="font-bold text-xl pt-4">Corporate Cards</h3>
+                    <p class="py-3 leading-normal opacity-70">Simplify your recurring, international
+                        and team expenses with savings on every spend.
+                        Save upto 10 lacs every month.</p>
+                    <div class="flex flex-row items-center">
+                        <a class="text-blue-500 font-bold " href="#">Know more</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 
+                        text-blue-500 group-hover:text-blue-600 transition-all duration-200">
+                        <polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                </div>
+                <!--item 5-->
+                <div class=" w-full max-h-[300px] hover:scale-105 cursor-pointer 
+                                transition-all duration-200 flex flex-col gap-y-4 p-10">
+                    <img class="rounded-full bg-blue-500 w-10 h-10" src="../Images/razorpayXicon-3345804c.svg"
+                        alt="">
+                    <h3 class="font-bold text-xl pt-4">Corporate Cards</h3>
+                    <p class="py-3 leading-normal opacity-70">Simplify your recurring, international
+                        and team expenses with savings on every spend.
+                        Save upto 10 lacs every month.</p>
+                    <div class="flex flex-row items-center">
+                        <a class="text-blue-500 font-bold " href="#">Know more</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 
+                        text-blue-500 group-hover:text-blue-600 transition-all duration-200">
+                        <polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                </div>
+                <!--item 6-->
+                <div class=" w-full max-h-[300px] hover:scale-105 cursor-pointer 
+                                transition-all duration-200 flex flex-col 
+                                gap-y-4 p-10 z-20 ">
+                    <img class="rounded-full bg-blue-500 w-10 h-10" src="../Images/razorpayXicon-3345804c.svg"
+                        alt="">
+                    <h3 class="font-bold text-xl pt-4">Corporate Cards</h3>
+                    <p class="py-3 leading-normal opacity-70">Simplify your recurring, international
+                        and team expenses with savings on every spend.
+                        Save upto 10 lacs every month.</p>
+                    <div class="flex flex-row items-center">
+                        <a class="text-blue-500 font-bold " href="#">Know more</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                        stroke-linejoin="round" class="feather feather-chevron-right w-5 h-5 
+                        text-blue-500 group-hover:text-blue-600 transition-all duration-200">
+                        <polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--core feature blue-->
+    <section></section>
+
+
+
+    <!--join razor pay-->
+     <section class="bg-[#f5f8fe] relative pt-15 pb-12 mt-[60px] -z-20">
+        <div class="relative w-11/12 max-w-[1080px] mx-auto flex">
+            <div class="flex flex-col justify-center w-full max-w-[calc(100%-500px)]">
+                <h3 class="font-semibold text-2xl">Join the 50,00,000+ businesses using Razorpay</h3>
+                <div class="bg-green-400 h-1 w-6 mt-4 mb-6"></div>
+                <p class="">We make it easier for you to focus on building great products 
+                    while we work on simplifying your payments. Become one of us 
+                    by joining thousands of our happy users and simplify the online 
+                    payment experience for your customers.Focus on your business while 
+                    we handle the complexities of payments for you.</p>
+
+            </div>
+            <div class="h-[500px] w-[500px] relative overflow-y-hidden mx-auto">
+                <div style="background: linear-gradient(0deg,#f4f8ff,#fff0)"
+                class="absolute w-full  h-[150px] bottom-0 z-50">
+                </div>
+                <div style="background: linear-gradient(180deg,#f4f8ff,#fff0)"
+                class="absolute w-full h-[150px] top-0 z-50">
+                </div>
+                <img class="absolute w-full h-auto object-cover companieslist" 
+                 src="../Images/comanies-f772fc25.png" alt="" loading="lazy" >
+            </div>
+
+        </div>
+     </section>
+
+
 
 
 

@@ -61,39 +61,46 @@
 document.body.classList.add("dark-theme");
 
 
-let inputs = document.querySelectorAll("input") ;
+// let inputs = document.querySelectorAll("input") ;
 
-inputs[4].addEventListener('click',function(dets){
-    dets.preventDefault() ;
+// inputs[4].addEventListener('click',function(dets){
+//     dets.preventDefault() ;
 
-    let newdiv = document.createElement("div") ;
-    newdiv.classList.add("card")
+//     let newdiv = document.createElement("div") ;
+//     newdiv.classList.add("card")
 
-    let picdiv =  document.createElement("div") ;
-    picdiv.classList.add("pic") ;
+//     let picdiv =  document.createElement("div") ;
+//     picdiv.classList.add("pic") ;
 
-    let h1 = document.createElement('h1')
-    h1.textContent = inputs[1].value ;
-    let h3 = document.createElement('h3')
-    h3.textContent = inputs[2].value
-    let p = document.createElement('p') ;
-    p.textContent = inputs[3].value ;
-    let imagee = document.createElement('img')
-    imagee.src = inputs[0].value ;
+//     let h1 = document.createElement('h1')
+//     h1.textContent = inputs[1].value ;
+//     let h3 = document.createElement('h3')
+//     h3.textContent = inputs[2].value
+//     let p = document.createElement('p') ;
+//     p.textContent = inputs[3].value ;
+//     let imagee = document.createElement('img')
+//     imagee.src = inputs[0].value ;
 
-    picdiv.appendChild(imagee)
+//     picdiv.appendChild(imagee)
 
-    let main = document.querySelector('#main') ;
-    newdiv.appendChild(picdiv) ;
-    newdiv.appendChild(h1)
-    newdiv.appendChild(h3)
-    newdiv.appendChild(p)
-    main.appendChild(newdiv) ; 
+//     let main = document.querySelector('#main') ;
+//     newdiv.appendChild(picdiv) ;
+//     newdiv.appendChild(h1)
+//     newdiv.appendChild(h3)
+//     newdiv.appendChild(p)
+//     main.appendChild(newdiv) ; 
 
-    inputs.forEach(function(things){
-        if(things.type !== 'submit'){
-            things.value = ""
-        }
-    })
+//     inputs.forEach(function(things){
+//         if(things.type !== 'submit'){
+//             things.value = ""
+//         }
+//     })
+// })
+
+let box = document.querySelector("div") ;
+box.addEventListener('mouseover',function(){
+    box.style.backgroundColor = "blue"
 })
-
+box.addEventListener('mouseout',function(){
+    box.style.backgroundColor = "red"
+})

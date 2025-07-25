@@ -20,15 +20,17 @@
         .done{
             text-decoration: line-through;
         }
+        @keyframes blink {
+            50%{
+                opacity: 1 ;
+            }
+        }
     </style>
 </head>
 <body>
-    <div>
-        <ul>
-            <li>Homework</li>
-            <li>Workout</li>
-            <li>Upskilling</li>
-        </ul>
+    <div class="relative ml-150 mt-50">
+        <input class="border px-2 animate-blink " type="text" placeholder="Enter your Username">
+        <h2 class="font-bold text-4xl mt-10">Characters left : <span>20</span></h2>
     </div>
     <script src="script.js"></script>
 </body>

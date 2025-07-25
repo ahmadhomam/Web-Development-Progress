@@ -97,9 +97,17 @@ document.body.classList.add("dark-theme");
 //     })
 // })
 
-let box = document.querySelector("div") ;
+let inp = document.querySelector("input") ;
+let span = document.querySelector("span") ;
 
-let ul = document.querySelector("ul") ;
-ul.addEventListener("click",function(dets){
-    dets.target.classList.toggle("done")
+inp.addEventListener("input",function(dets){
+    const size =20 - inp.value.length ;
+    span.textContent = size ;
+
+    if(size <0){
+        span.style.color = "red" ;
+    }
+    else{
+        span.style.color = "white"
+    }
 })

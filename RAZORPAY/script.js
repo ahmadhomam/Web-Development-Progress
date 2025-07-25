@@ -98,9 +98,8 @@ document.body.classList.add("dark-theme");
 // })
 
 let box = document.querySelector("div") ;
-box.addEventListener('mouseover',function(){
-    box.style.backgroundColor = "blue"
-})
-box.addEventListener('mouseout',function(){
-    box.style.backgroundColor = "red"
+
+let ul = document.querySelector("ul") ;
+ul.addEventListener("click",function(dets){
+    dets.target.classList.toggle("done")
 })

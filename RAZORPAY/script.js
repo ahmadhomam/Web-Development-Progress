@@ -97,17 +97,39 @@ document.body.classList.add("dark-theme");
 //     })
 // })
 
-let inp = document.querySelector("input") ;
-let span = document.querySelector("span") ;
+let form = document.querySelector("#loginForm") ;
+let email = document.querySelector("#email") ;
+let password = document.querySelector("#password") ;
 
-inp.addEventListener("input",function(dets){
-    const size =20 - inp.value.length ;
-    span.textContent = size ;
+form.addEventListener("submit",function(dets){
+    dets.preventDefault() ;
 
-    if(size <0){
-        span.style.color = "red" ;
+    document.querySelector("#emailerror").textContent = ""
+    document.querySelector("#passerror").textContent = ""
+    document.querySelector("#errorMsg").textContent = " "
+
+    const vemail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ ;
+    const vpass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?#&])[A-Za-z\d@$!%*?#&]{8,}$/
+    let message = false ;
+
+    let emailans = vemail.test(email.value) ;
+    let passans = vpass.test(password.value) ;
+
+    if(!emailans){
+        document.querySelector("#emailerror").textContent  = "Email is Incorrect! "
+        document.querySelector("#emailerror").style.display = "initial"
+        message = true ;
     }
-    else{
-        span.style.color = "white"
+    if(!passans){
+        document.querySelector("#passerror").textContent = "Password is Incorrect! "
+        document.querySelector("#passerror").style.display = "initial"
+        
+        message = true ;
+    }
+    
+    if(!message){
+        document.querySelector("#errorMsg").textContent = "Everything is fine "
+        document.querySelector("#errorMsg").textContent = "Everything is fine "
+
     }
 })
